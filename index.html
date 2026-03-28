@@ -1,26 +1,269 @@
-<h1>碩博士論文排版與格式調整服務</h1>
-<img src="assets/images/banner.png" style="width:100%; max-height:400px; object-fit:cover;">
-<p>Research Mate Studio 協助研究生與研究人員完成學位論文、期刊稿件的格式整理、排版修正與投稿前檢查。</p>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Mate Studio｜論文排版專業協助</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      color: #222;
+      background: #f7f8fb;
+      line-height: 1.8;
+    }
 
-<h2>你專注研究，我協助細節</h2>
-<p>提供學位論文格式調整、期刊投稿排版服務，協助你快速完成格式審查，減少反覆修改的時間成本。</p>
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
 
-<h2>服務內容</h2>
-<ul>
-  <li>碩博士學位論文排版與格式調整</li>
-  <li>期刊投稿格式處理</li>
-  <li>Word 文件格式整理</li>
-  <li>自動化目錄與標題樣式設定</li>
-</ul>
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e8e8e8;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-<h2>適合對象</h2>
-<ul>
-  <li>準備畢業、需要符合學校格式規範的碩博士生</li>
-  <li>正在整理期刊稿件格式的研究人員</li>
-  <li>不熟悉 Word 排版、想節省時間的人</li>
-</ul>
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
 
-<h2>立即聯絡</h2>
-<p>Email：researchmate.studio@gmail.com</p>
-<p><a href="#">加入官方 Line</a></p>
-<p><a href="#">填寫需求表單</a></p>
+    .logo {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #2b3a67;
+    }
+
+    .hero {
+      background: #fff;
+      padding: 36px 0 56px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-size: 2.3rem;
+      line-height: 1.3;
+      margin: 0 0 14px;
+      color: #1d2a52;
+    }
+
+    .hero p {
+      font-size: 1.08rem;
+      color: #4f5b78;
+      max-width: 760px;
+      margin: 0 0 22px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #2b3a67;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #1f2b4f;
+    }
+
+    .btn-secondary {
+      background: #eef2ff;
+      color: #2b3a67;
+    }
+
+    .btn-secondary:hover {
+      background: #dfe7ff;
+    }
+
+    section {
+      padding: 56px 0;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #1d2a52;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #2b3a67;
+      font-size: 1.1rem;
+    }
+
+    .card p, .card li {
+      color: #555;
+      font-size: 0.98rem;
+    }
+
+    .light {
+      background: #eef3fb;
+    }
+
+    .contact-box {
+      background: #fff;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 28px 0 40px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="logo">Research Mate Studio</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <img src="assets/images/banner.png" alt="Research Mate Studio banner">
+      <h1>論文排版專業協助，讓你更專注於研究本身</h1>
+      <p>
+        Research Mate Studio 提供學位論文格式調整、期刊投稿排版、Word 文件整理與投稿前檢查服務，
+        協助研究生與研究人員減少格式修正時間，更有效率地完成論文與稿件準備。
+      </p>
+      <div class="btn-group">
+        <a class="btn btn-primary" href="#contact">立即詢問</a>
+        <a class="btn btn-secondary" href="#services">查看服務</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">服務內容</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>學位論文排版</h3>
+          <p>依照學校格式規範調整封面、目錄、頁碼、章節標題、表格與圖片配置。</p>
+        </div>
+        <div class="card">
+          <h3>期刊投稿格式整理</h3>
+          <p>協助整理稿件格式、參考文獻、表格與圖說，使內容更符合投稿需求。</p>
+        </div>
+        <div class="card">
+          <h3>Word 文件修整</h3>
+          <p>處理樣式混亂、段落格式不一致、目錄跑掉、頁碼錯誤等常見問題。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="light">
+    <div class="container">
+      <h2 class="section-title">適合對象</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>碩博士研究生</h3>
+          <p>準備口試、畢業送審，卻被格式問題拖慢進度的人。</p>
+        </div>
+        <div class="card">
+          <h3>準備投稿的研究者</h3>
+          <p>需要整理期刊格式、提升稿件整體整潔度與一致性的人。</p>
+        </div>
+        <div class="card">
+          <h3>不想浪費時間處理排版的人</h3>
+          <p>想把時間留給研究、分析與寫作，而不是一直調格式的人。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">為什麼選擇 Research Mate Studio</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>熟悉學術文件需求</h3>
+          <p>理解學位論文與期刊稿件常見格式要求，協助你快速整理重點問題。</p>
+        </div>
+        <div class="card">
+          <h3>人工檢查與一致性調整</h3>
+          <p>不只是機械式修正，而是協助你讓整份文件更整齊、清楚、可提交。</p>
+        </div>
+        <div class="card">
+          <h3>節省時間與心力</h3>
+          <p>把繁瑣排版交給專業協助，讓你能把注意力放回真正重要的研究工作。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="light">
+    <div class="container">
+      <h2 class="section-title">聯絡我</h2>
+      <div class="contact-box">
+        <p><strong>Email：</strong>researchmate.studio@gmail.com</p>
+        <p><strong>官方 Line：</strong>這裡可放你的 Line 連結</p>
+        <p><strong>需求表單：</strong>這裡可放 Google 表單連結</p>
+        <p>歡迎先來信或填表單說明需求，我會再和你確認服務內容與時程。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Research Mate Studio. All rights reserved.
+  </footer>
+
+</body>
+</html>
